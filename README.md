@@ -10,7 +10,7 @@
 
 *Moving beyond traditional prompt engineering and RAG to create persistent, decision-aware cognitive systems*
 
-[🚀 Live Demo](https://axion-project.github.io/orac-prototype/public/index.html) • [📖 Documentation](#documentation) • [🤝 Contributing](#contributing)
+[🚀 Live Demo](https://axion-project.github.io/orac-prototype/public/) • [📖 Documentation](#documentation) • [🤝 Contributing](#contributing)
 
 </div>
 
