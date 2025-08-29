@@ -1,0 +1,399 @@
+/* Tailwind CSS imports */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom CSS Variables for ORAC Theme */
+:root {
+  --orac-primary: #3b82f6;
+  --orac-secondary: #10b981;
+  --orac-accent: #f59e0b;
+  --orac-danger: #ef4444;
+  --orac-dark: #111827;
+  --orac-darker: #0f172a;
+  --orac-light: #f8fafc;
+  --orac-gray: #6b7280;
+  
+  /* Animation durations */
+  --orac-transition-fast: 0.15s;
+  --orac-transition-normal: 0.3s;
+  --orac-transition-slow: 0.5s;
+  
+  /* Spacing */
+  --orac-spacing-xs: 0.25rem;
+  --orac-spacing-sm: 0.5rem;
+  --orac-spacing-md: 1rem;
+  --orac-spacing-lg: 1.5rem;
+  --orac-spacing-xl: 2rem;
+}
+
+/* Base styles and resets */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--orac-dark);
+  color: white;
+  overflow-x: hidden;
+}
+
+code {
+  font-family: 'SF Mono', 'Monaco', 'Cascadia Code', 'Roboto Mono', 'Courier New', monospace;
+}
+
+/* Custom scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1f2937;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4b5563;
+  border-radius: 4px;
+  transition: background var(--orac-transition-normal) ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #6b7280;
+}
+
+::-webkit-scrollbar-corner {
+  background: #1f2937;
+}
+
+/* Firefox scrollbar */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #4b5563 #1f2937;
+}
+
+/* Custom animations for ORAC */
+@keyframes orac-pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.6;
+  }
+}
+
+@keyframes orac-bounce {
+  0%, 20%, 53%, 80%, 100% {
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    transform: translate3d(0, 0, 0);
+  }
+  40%, 43% {
+    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    transform: translate3d(0, -4px, 0);
+  }
+  70% {
+    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    transform: translate3d(0, -2px, 0);
+  }
+  90% {
+    transform: translate3d(0, -1px, 0);
+  }
+}
+
+@keyframes orac-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes orac-slide-in-right {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes orac-scale-in {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes orac-gradient-shift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes orac-data-flow {
+  0% {
+    transform: translateX(-100%) scaleX(0);
+  }
+  50% {
+    transform: translateX(0%) scaleX(1);
+  }
+  100% {
+    transform: translateX(100%) scaleX(0);
+  }
+}
+
+/* Custom utility classes for ORAC */
+.orac-pulse {
+  animation: orac-pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.orac-bounce {
+  animation: orac-bounce 1s infinite;
+}
+
+.orac-fade-in {
+  animation: orac-fade-in var(--orac-transition-slow) ease-out;
+}
+
+.orac-slide-in-right {
+  animation: orac-slide-in-right var(--orac-transition-slow) ease-out;
+}
+
+.orac-scale-in {
+  animation: orac-scale-in var(--orac-transition-normal) ease-out;
+}
+
+.orac-gradient-text {
+  background: linear-gradient(135deg, var(--orac-primary), var(--orac-secondary), var(--orac-accent));
+  background-size: 300% 300%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: orac-gradient-shift 3s ease infinite;
+}
+
+.orac-gradient-bg {
+  background: linear-gradient(135deg, var(--orac-primary), var(--orac-secondary));
+  background-size: 200% 200%;
+  animation: orac-gradient-shift 4s ease infinite;
+}
+
+.orac-glass {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.orac-glow {
+  box-shadow: 0 0 20px rgba(59, 130, 246, 0.3);
+}
+
+.orac-glow-green {
+  box-shadow: 0 0 20px rgba(16, 185, 129, 0.3);
+}
+
+.orac-glow-yellow {
+  box-shadow: 0 0 20px rgba(245, 158, 11, 0.3);
+}
+
+/* Data visualization effects */
+.orac-data-flow {
+  position: relative;
+  overflow: hidden;
+}
+
+.orac-data-flow::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(90deg, transparent, rgba(59, 130, 246, 0.3), transparent);
+  animation: orac-data-flow 2s ease-in-out infinite;
+}
+
+/* Interactive elements */
+.orac-button {
+  @apply px-4 py-2 rounded-lg font-medium transition-all duration-300;
+  @apply bg-blue-600 hover:bg-blue-700 text-white;
+  @apply transform hover:scale-105 active:scale-95;
+  @apply focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-gray-900;
+}
+
+.orac-button:disabled {
+  @apply opacity-50 cursor-not-allowed transform-none;
+}
+
+.orac-input {
+  @apply w-full p-3 bg-gray-700 border border-gray-600 rounded-lg text-white placeholder-gray-400;
+  @apply focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500;
+  @apply transition-all duration-200;
+}
+
+.orac-card {
+  @apply bg-gray-800 rounded-lg p-6 border border-gray-700;
+  @apply transition-all duration-300 hover:border-gray-600;
+  @apply shadow-lg hover:shadow-xl;
+}
+
+.orac-card-interactive {
+  @apply orac-card cursor-pointer transform hover:scale-[1.02];
+}
+
+/* Status indicators */
+.orac-status-online {
+  @apply w-2 h-2 bg-green-400 rounded-full;
+  animation: orac-pulse 2s infinite;
+}
+
+.orac-status-loading {
+  @apply w-2 h-2 bg-yellow-400 rounded-full;
+  animation: orac-pulse 1s infinite;
+}
+
+.orac-status-offline {
+  @apply w-2 h-2 bg-red-400 rounded-full;
+}
+
+/* Typography enhancements */
+.orac-heading {
+  @apply font-bold tracking-tight;
+  line-height: 1.2;
+}
+
+.orac-subheading {
+  @apply text-gray-400 font-medium;
+}
+
+.orac-monospace {
+  font-family: 'SF Mono', 'Monaco', 'Cascadia Code', 'Roboto Mono', 'Courier New', monospace;
+  @apply text-sm bg-gray-900/50 px-2 py-1 rounded;
+}
+
+/* Responsive design helpers */
+@media (max-width: 768px) {
+  :root {
+    font-size: 14px;
+  }
+  
+  .orac-card {
+    @apply p-4;
+  }
+  
+  .orac-button {
+    @apply px-3 py-2 text-sm;
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    font-size: 13px;
+  }
+  
+  .orac-card {
+    @apply p-3;
+  }
+}
+
+/* Dark mode specific adjustments */
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+  }
+}
+
+/* Reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  
+  .orac-pulse,
+  .orac-bounce,
+  .orac-gradient-text,
+  .orac-gradient-bg,
+  .orac-data-flow::before {
+    animation: none !important;
+  }
+}
+
+/* Print styles */
+@media print {
+  body {
+    background: white !important;
+    color: black !important;
+  }
+  
+  .orac-card {
+    border: 1px solid #ccc !important;
+    box-shadow: none !important;
+  }
+  
+  .orac-gradient-text {
+    -webkit-text-fill-color: black !important;
+    background: none !important;
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .orac-card {
+    border-width: 2px;
+  }
+  
+  .orac-button {
+    border: 2px solid currentColor;
+  }
+}
+
+/* Focus visible improvements for accessibility */
+.orac-focus-visible {
+  @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-900;
+}
+
+/* Loading spinner for ORAC */
+.orac-spinner {
+  width: 24px;
+  height: 24px;
+  border: 3px solid rgba(59, 130, 246, 0.3);
+  border-radius: 50%;
+  border-top-color: var(--orac-primary);
+  animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
