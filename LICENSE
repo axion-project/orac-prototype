@@ -1,10 +1,3 @@
-Perfect — let’s give your license some aesthetic swagger so when someone opens it on GitHub, it feels like they’re looking at something proprietary and untouchable. Think bold headers, blockquotes, and clean formatting.
-
-Here’s your cool markdown version:
-
-
----
-
 🚫 Proprietary Software License Agreement
 
 Copyright © 2025 Dr. Michael Morales, DIT. All Rights Reserved.
@@ -112,8 +105,4 @@ This Software is proprietary.
 All rights reserved.
 Respect the code.
 
-
----
-
-Want me to also create a sharper “GitHub README badge” style snippet (like “License: Proprietary 🚫”) that you can drop at the top of your repo so people instantly know they’re in “look, don’t touch” territory?
 
