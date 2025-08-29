@@ -259,11 +259,21 @@ This is a research prototype demonstrating next-generation AI concepts. While no
 - Cognitive system design patterns
 - AI memory and learning systems
 
-## 📄 License & Copyright
+## 📄 License & Copyright  
 
-© 2025 Dr. Michael Morales, DIT | ORAC Framework. All rights reserved.
+> **🚫 Proprietary License**  
+> Copyright © 2025 **Dr. Michael Morales, DIT**  
+> **Aedin Insight, LLC — New Mexico**  
+>  
+> This software is proprietary research software.  
+> All rights reserved.  
+>  
+> - 🔒 Not open-source  
+> - 🚫 No redistribution, resale, or sublicensing  
+> - 🛠 Commercial use requires explicit licensing agreement with Aedin Insight, LLC  
 
-This is proprietary research software. The concepts, architecture, and implementation represent original research in next-generation AI systems. Commercial use requires explicit licensing agreement.
+📌 See the full [LICENSE](LICENSE.md) file for details.  
+📧 Contact: [info@aedininsight.com](mailto:info@aedininsight.com)
 
 ## 📞 Contact & Collaboration
 
