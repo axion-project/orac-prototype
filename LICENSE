@@ -1,29 +1,119 @@
+Perfect — let’s give your license some aesthetic swagger so when someone opens it on GitHub, it feels like they’re looking at something proprietary and untouchable. Think bold headers, blockquotes, and clean formatting.
+
+Here’s your cool markdown version:
+
+
+---
+
+🚫 Proprietary Software License Agreement
+
 Copyright © 2025 Dr. Michael Morales, DIT. All Rights Reserved.
+Aedin Insight, LLC — New Mexico
 
-This software and any associated documentation files (the “Software”) are the proprietary and confidential property of Aedin Insight, LLC. By accessing, downloading, installing or using the Software, you agree to be bound by the following terms:
 
-1.  License Grant  
-Aedin Insight, LLC grants you a limited, non-exclusive, non-transferable, revocable license to use the Software strictly for personal or internal business purposes only.
+---
 
-2.  Restrictions  
+🔑 1. License Grant
+
+You are granted a limited, non-exclusive, non-transferable, revocable license to use this software (the “Software”) only for personal or internal business purposes.
+
+> ❗ This is a license to use, not a license to own.
+
+
+
+
+---
+
+⛔ 2. Restrictions
+
 You may NOT:
-   • Copy, reproduce, modify, merge, distribute, transmit, reverse engineer, decompile, disassemble, or create derivative works of the Software;  
-   • Rent, lease, sublicense, assign, sell, or transfer the Software to any third party;  
-   • Use the Software for any competing products or commercial services.
 
-3.  Ownership  
-The Software is licensed, not sold. All rights, title, and interest in and to the Software, including all intellectual property rights, remain exclusively with Aedin Insight, LLC.
+❌ Copy, reproduce, modify, merge, or distribute the Software
 
-4.  Termination  
-This license is valid until terminated. Aedin Insight, LLC may terminate this license at any time and for any reason. Upon termination, you must immediately cease all use of the Software and destroy all copies in your possession.
+❌ Reverse engineer, decompile, or disassemble
 
-5.  Disclaimer of Warranty  
-The Software is provided “AS IS,” without any warranty of any kind, express or implied—including, but not limited to, warranties of merchantability, fitness for a particular purpose, or non-infringement.
+❌ Rent, lease, sublicense, sell, or transfer the Software
 
-6.  Limitation of Liability  
-In no event shall Aedin Insight, LLC, or its affiliates, be liable for any indirect, incidental, special, consequential, or punitive damages whatsoever arising out of or related to your use of, or inability to use, the Software.
+❌ Use it to build competing products or services
 
-7.  Governing Law  
-This Agreement shall be governed by and construed in accordance with the laws of the State of New Mexico, without regard to its conflict of laws principles.
 
-[END OF LICENSE]
+
+---
+
+🏛️ 3. Ownership
+
+The Software is licensed, not sold.
+All rights, title, and interest remain the exclusive property of Aedin Insight, LLC.
+
+
+---
+
+🔒 4. Termination
+
+This license remains in effect until terminated.
+Aedin Insight, LLC may terminate it at any time, for any reason.
+
+Upon termination, you must:
+
+Stop using the Software immediately
+
+Destroy all copies in your possession
+
+
+
+---
+
+⚠️ 5. Disclaimer of Warranty
+
+The Software is provided:
+
+> “AS IS” — without warranty of any kind.
+
+
+
+This includes (but is not limited to):
+
+🛑 Merchantability
+
+🛑 Fitness for a particular purpose
+
+🛑 Non-infringement
+
+
+
+---
+
+💥 6. Limitation of Liability
+
+In no event shall Aedin Insight, LLC (or affiliates) be liable for:
+
+Indirect damages
+
+Incidental damages
+
+Special, consequential, or punitive damages
+
+
+Basically: if it breaks, misbehaves, or explodes… that’s on you.
+
+
+---
+
+⚖️ 7. Governing Law
+
+This Agreement is governed by the laws of the State of New Mexico, without regard to conflict of law principles.
+
+
+---
+
+🧠 Final Note
+
+This Software is proprietary.
+All rights reserved.
+Respect the code.
+
+
+---
+
+Want me to also create a sharper “GitHub README badge” style snippet (like “License: Proprietary 🚫”) that you can drop at the top of your repo so people instantly know they’re in “look, don’t touch” territory?
+
