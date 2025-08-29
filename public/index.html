@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#1f2937" />
+    <meta name="description" content="ORAC - Operational Reality Architect & Command. Next-generation context engineering framework with real-time data integration, predictive modeling, and multi-mode AI interaction." />
+    <meta name="keywords" content="AI, ORAC, context engineering, real-time data, predictive modeling, cognitive systems, artificial intelligence" />
+    <meta name="author" content="Dr. Michael Morales, DIT" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://yourusername.github.io/orac-prototype/" />
+    <meta property="og:title" content="ORAC - Operational Reality Architect & Command" />
+    <meta property="og:description" content="Next-generation AI with real-time data streams, predictive logic, and multi-mode reasoning. Experience the future of context engineering." />
+    <meta property="og:image" content="%PUBLIC_URL%/og-image.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://yourusername.github.io/orac-prototype/" />
+    <meta property="twitter:title" content="ORAC - Operational Reality Architect & Command" />
+    <meta property="twitter:description" content="Next-generation AI with real-time data streams, predictive logic, and multi-mode reasoning." />
+    <meta property="twitter:image" content="%PUBLIC_URL%/twitter-image.png" />
+    
+    <!-- Favicon and App Icons -->
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    
+    <!-- Preconnect to optimize loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Performance hints -->
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    
+    <title>ORAC - Operational Reality Architect & Command</title>
+    
+    <!-- Structured data for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "ORAC - Operational Reality Architect & Command",
+      "description": "Next-generation context engineering framework with real-time data integration and predictive modeling",
+      "author": {
+        "@type": "Person",
+        "name": "Dr. Michael Morales"
+      },
+      "applicationCategory": "AI/Machine Learning",
+      "operatingSystem": "Web Browser",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      }
+    }
+    </script>
+  </head>
+  <body class="bg-gray-900 text-white">
+    <noscript>
+      <div style="text-align: center; padding: 50px; background: #1f2937; color: white; font-family: Arial, sans-serif;">
+        <h1>🧠 ORAC Requires JavaScript</h1>
+        <p>ORAC (Operational Reality Architect & Command) requires JavaScript to demonstrate real-time AI capabilities.</p>
+        <p>Please enable JavaScript in your browser to experience the future of context engineering.</p>
+      </div>
+    </noscript>
+    
+    <!-- Loading indicator -->
+    <div id="loading-screen" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: #111827; display: flex; align-items: center; justify-content: center; z-index: 9999;">
+      <div style="text-align: center; color: white; font-family: Arial, sans-serif;">
+        <div style="font-size: 48px; margin-bottom: 20px;">⚡</div>
+        <h2 style="margin: 0 0 10px 0; font-size: 24px;">ORAC</h2>
+        <p style="margin: 0; color: #9ca3af;">Initializing Cognitive Systems...</p>
+        <div style="margin-top: 20px; width: 200px; height: 4px; background: #374151; border-radius: 2px; overflow: hidden;">
+          <div style="width: 100%; height: 100%; background: linear-gradient(90deg, #3b82f6, #10b981, #f59e0b); animation: loading 2s ease-in-out infinite;"></div>
+        </div>
+      </div>
+    </div>
+    
+    <style>
+      @keyframes loading {
+        0% { transform: translateX(-100%); }
+        50% { transform: translateX(0%); }
+        100% { transform: translateX(100%); }
+      }
+    </style>
+    
+    <script>
+      // Hide loading screen once React loads
+      window.addEventListener('load', function() {
+        setTimeout(function() {
+          const loadingScreen = document.getElementById('loading-screen');
+          if (loadingScreen) {
+            loadingScreen.style.opacity = '0';
+            loadingScreen.style.transition = 'opacity 0.5s ease-out';
+            setTimeout(function() {
+              loadingScreen.remove();
+            }, 500);
+          }
+        }, 1000);
+      });
+    </script>
+    
+    <div id="root"></div>
+    
+    <!-- Analytics placeholder (uncomment and add your tracking ID) -->
+    <!-- 
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_TRACKING_ID"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'GA_TRACKING_ID');
+    </script>
+    -->
+  </body>
+</html>
