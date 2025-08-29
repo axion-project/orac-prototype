@@ -270,9 +270,6 @@ This is proprietary research software. The concepts, architecture, and implement
 **Dr. Michael Morales, DIT**  
 *Creator of the ORAC Framework*
 
-- **Research Inquiries**: [research@orac.ai](mailto:research@orac.ai)
-- **Enterprise Licensing**: [licensing@orac.ai](mailto:licensing@orac.ai)  
-- **Technical Questions**: [GitHub Issues](https://github.com/yourusername/orac-prototype/issues)
 
 ---
 
